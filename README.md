@@ -1,8 +1,6 @@
-# Bootcamp programistyczny WWSI 
+## Bootcamp programistyczny WWSI Nowoczesny JavaScript i React
 
-## Nowoczesny JavaScript i React
-
-# Zadania 
+### Zadania 
 
 1. Wprowadzenie do programowania w JavaScript
 1. Praca z drzewem DOM
