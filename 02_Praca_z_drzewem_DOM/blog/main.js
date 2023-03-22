@@ -62,3 +62,53 @@ newLi.append(newLink);
 const list = document.querySelector("ul");
 list.append(newLi);
 console.dir(newLi);
+
+//Zadanie 5
+
+const selectedLi = document.querySelector("li");
+const copiedLi = selectedLi.cloneNode(true);
+copiedLi.classList.add("naszaKropeczka");
+list.append(copiedLi);
+const selectedSecondLi = document.querySelectorAll("li")[1];
+const clonedLi = selectedSecondLi.cloneNode(true);
+const innerA = clonedLi.querySelector("a");
+innerA.innerText = "Nasze LI";
+innerA.href = "#naszeLI";
+list.append(clonedLi);
+
+//Zadanie 6
+
+const elementToDelete = document.querySelector(".about-me-title");
+console.log(elementToDelete);
+elementToDelete.remove();
+
+
+//Zadanie 1 - stylowanie JS
+blogHeader.style.color = "pink";
+blogHeader.style.fontSize = "2rem";
+blogHeader.style.textAlign = "center";
+blogHeader.style.paddingTop = "4.375rem";
+blogHeader.style.textDecoration = "underline";
+
+//Zadanie 2 - zdarzenia JS
+blogForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("zdarzenia JS");
+    blogForm.classList.add("hide");
+    const foot = document.querySelector("footer");
+    const headerInFooter = document.createElement("h3");
+    headerInFooter.innerText = "Wiadomość została wysłana";
+    foot.prepend(headerInFooter);
+});
+
+//Zadanie 3 - zdarzenia JS
+
+const laosHeader = document.querySelector(".first-article__text-title");
+
+laosHeader.addEventListener("mouseenter", function () {
+    console.log(this);
+    this.style.color = "magenta";
+    console.log(this.parentElement.parentElement.firstElementChild);
+    this.parentElement.parentElement.firstElementChild.style.backgroundImage
+        = "url(https://dinoanimals.pl/wp-content/uploads/2019/10/Panda-wielka-1120x700.jpg)";
+})
