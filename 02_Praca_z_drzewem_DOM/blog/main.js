@@ -50,3 +50,15 @@ blogHeader.classList.remove(headerClass);
 
 //8.
 document.querySelector(".promo-article-title").className = headerClass;
+
+
+//Zadanie 4
+
+const newLi = document.createElement("li");
+const newLink = document.createElement("a");
+newLink.innerText = "Podróże";
+newLink.setAttribute("href", "#podroze");
+newLi.append(newLink);
+const list = document.querySelector("ul");
+list.append(newLi);
+console.dir(newLi);
