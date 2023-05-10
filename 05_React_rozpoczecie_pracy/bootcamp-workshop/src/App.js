@@ -1,4 +1,5 @@
-import Calculator from "./components/Calculator";
+import Calculator from "./components/Chapter02/Calculator";
+import CalculateTwoNumbers from "./components/Chapter02/CalculateTwoNumbers";
 import artist from './data/artist';
 import fruits from "./data/fruits";
 import './App.css';
@@ -13,16 +14,17 @@ function App() {
       <div className="App-header">
         {/*<h1>{ numberA + numberB }</h1>*/}
         {/*<h1>Twój wiek to: {new Date().getFullYear() - birthYear}</h1>*/}
-        <ul>
-            <li>{artist.firstName}</li>
-            <li>{artist.nickname}</li>
-            <li>{artist.lastName}</li>
-            <li>Wiek artysty to : {artist.age}</li>
-        </ul>
-          <img src={imageUrl} alt="samochód" />
-        <Calculator />
-        <p>Owoce: {fruits.length}</p>
-        <p>{fruits.join("-")}</p>
+        {/*<ul>*/}
+        {/*    <li>{artist.firstName}</li>*/}
+        {/*    <li>{artist.nickname}</li>*/}
+        {/*    <li>{artist.lastName}</li>*/}
+        {/*    <li>Wiek artysty to : {artist.age}</li>*/}
+        {/*</ul>*/}
+        {/*  <img src={imageUrl} alt="samochód" />*/}
+        {/*<Calculator />*/}
+        {/*<p>Owoce: {fruits.length}</p>*/}
+        {/*<p>{fruits.join("-")}</p>*/}
+        <CalculateTwoNumbers />
       </div>
     </div>
   );
