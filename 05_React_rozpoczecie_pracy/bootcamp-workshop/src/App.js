@@ -3,6 +3,10 @@ import CalculateTwoNumbers from "./components/Chapter02/CalculateTwoNumbers";
 import artist from './data/artist';
 import fruits from "./data/fruits";
 import './App.css';
+import ThreeSquares from "./components/Chapter02/ThreeSquares";
+import ColorBox from "./components/Chapter02/ColorBox";
+import PeopleList from "./components/Chapter03/PeopleList";
+import StudentList from "./components/Chapter03/StudentList";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -24,7 +28,11 @@ function App() {
         {/*<Calculator />*/}
         {/*<p>Owoce: {fruits.length}</p>*/}
         {/*<p>{fruits.join("-")}</p>*/}
-        <CalculateTwoNumbers />
+        {/*<CalculateTwoNumbers />*/}
+        <ThreeSquares />
+        <ColorBox />
+        <PeopleList />
+        <StudentList />
       </div>
     </div>
   );
