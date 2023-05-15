@@ -7,6 +7,9 @@ import ThreeSquares from "./components/Chapter02/ThreeSquares";
 import ColorBox from "./components/Chapter02/ColorBox";
 import PeopleList from "./components/Chapter03/PeopleList";
 import StudentList from "./components/Chapter03/StudentList";
+import Search from "./components/Chapter04/Search";
+import LikeBox from "./components/Chapter04/LikeBox";
+import Menu from "./components/Chapter04/Menu";
 
 function App() {
   // const numberA = parseInt(prompt("Podaj liczbę A?"));
@@ -29,10 +32,13 @@ function App() {
         {/*<p>Owoce: {fruits.length}</p>*/}
         {/*<p>{fruits.join("-")}</p>*/}
         {/*<CalculateTwoNumbers />*/}
-        <ThreeSquares />
-        <ColorBox />
-        <PeopleList />
-        <StudentList />
+        {/*<ThreeSquares />*/}
+        {/*<ColorBox />*/}
+        {/*<PeopleList />*/}
+        {/*<StudentList />*/}
+        <Search />
+        <LikeBox />
+        <Menu />
       </div>
     </div>
   );
