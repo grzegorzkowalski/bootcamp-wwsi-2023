@@ -7,20 +7,22 @@ import Sum from "./components/Chapter05/Sum";
 import CurrencyConverter from "./components/Chapter05/CurrencyConverter";
 import menuList from "./data/menu";
 import './App.css';
+import ParentComponent from "./components/Chapter06/ParentComponent";
 
 function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <Search />
-        <LikeBox likes={500} />
-        <Menu list={menuList} />
-        <Hello name="Grzegorz" surname="Kowalski" nickname="Kowal" />
-        <AddNumbers numberA={4} numberB={5} />
-        <Sum tab={[1,2,3,4,5,6,7]} />
-        <CurrencyConverter from="EUR" to="USD" value={200} rate={1.12275} />
-        <CurrencyConverter from="EUR" to="PLN" value={200} rate={4.5} />
-        <CurrencyConverter from="EUR" to="CHF" value={200} rate={1.3} />
+        {/*<Search />*/}
+        {/*<LikeBox likes={500} />*/}
+        {/*<Menu list={menuList} />*/}
+        {/*<Hello name="Grzegorz" surname="Kowalski" nickname="Kowal" />*/}
+        {/*<AddNumbers numberA={4} numberB={5} />*/}
+        {/*<Sum tab={[1,2,3,4,5,6,7]} />*/}
+        {/*<CurrencyConverter from="EUR" to="USD" value={200} rate={1.12275} />*/}
+        {/*<CurrencyConverter from="EUR" to="PLN" value={200} rate={4.5} />*/}
+        {/*<CurrencyConverter from="EUR" to="CHF" value={200} rate={1.3} />*/}
+        <ParentComponent />
       </div>
     </div>
   );
