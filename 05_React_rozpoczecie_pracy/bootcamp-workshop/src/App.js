@@ -12,6 +12,8 @@ import ShopItem from "./components/Chapter06/ShopItem";
 import ShopList from "./components/Chapter06/ShopList";
 import shopItem from "./data/shopItem";
 import shopItems from "./data/shopItems";
+import HelloWorld from "./components/Chapter07/HelloWorld";
+import Box from "./components/Chapter07/Box";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <ParentComponent />
         <ShopItem item={shopItem} />
         <ShopList items={shopItems} />
+        <HelloWorld />
+        <Box />
       </div>
     </div>
   );
