@@ -1,4 +1,4 @@
-const LikeBox = () => {
+const LikeBox = ({likes}) => {
     return (
         <div>
             <p style={{
@@ -9,7 +9,7 @@ const LikeBox = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center"
-            }}>0</p>
+            }}>{likes}</p>
             <button>Like</button>
         </div>
     );

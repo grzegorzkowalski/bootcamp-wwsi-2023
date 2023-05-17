@@ -1,4 +1,4 @@
-const Menu = () => {
+const Menu = ({list}) => {
     return (
         <nav>
             <ul style={{
@@ -6,10 +6,9 @@ const Menu = () => {
                 justifyContent: "center",
                 alignItems: "center"
             }}>
-                <li><a href="/">Strona główna</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/cennik">Cennik</a></li>
-                <li><a href="/kontakt">Kontakt</a></li>
+                {
+                    list.map((el) => <li key={el.url}><a href={el.url}>{el.text}</a></li>)
+                }
             </ul>
         </nav>
     );
