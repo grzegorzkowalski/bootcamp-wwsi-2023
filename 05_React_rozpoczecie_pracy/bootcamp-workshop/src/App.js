@@ -8,6 +8,10 @@ import CurrencyConverter from "./components/Chapter05/CurrencyConverter";
 import menuList from "./data/menu";
 import './App.css';
 import ParentComponent from "./components/Chapter06/ParentComponent";
+import ShopItem from "./components/Chapter06/ShopItem";
+import ShopList from "./components/Chapter06/ShopList";
+import shopItem from "./data/shopItem";
+import shopItems from "./data/shopItems";
 
 function App() {
   return (
@@ -23,6 +27,8 @@ function App() {
         {/*<CurrencyConverter from="EUR" to="PLN" value={200} rate={4.5} />*/}
         {/*<CurrencyConverter from="EUR" to="CHF" value={200} rate={1.3} />*/}
         <ParentComponent />
+        <ShopItem item={shopItem} />
+        <ShopList items={shopItems} />
       </div>
     </div>
   );
